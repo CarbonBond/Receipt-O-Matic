@@ -11,6 +11,14 @@ function getUsers() {
       email: 'brandon.w.burge@email.com',
       firstname: 'Brandon',
       lastname: 'Burge',
+      company: {
+        create: [
+          {
+            id: 0,
+            name: "BallsAndBikes",
+          }
+        ]
+      },
       role: {
         create: [
           {
@@ -35,13 +43,15 @@ function getUsers() {
                   cost: 1000.00,
                   desc: "Mountain bike with shocks and disc brakes",
                   sku: " 1010101",
-                  quantity: 1
+                  quantity: 1,
+                  companyId: 0
                 }, {
                   name: "ball",
                   cost: 1.50,
                   desc: "Bouncy Ball",
                   sku: "1111111",
-                  quantity: 100
+                  quantity: 100,
+                  companyId: 0
                 }
 
               ]
